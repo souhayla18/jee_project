@@ -1,0 +1,12 @@
+### Create Exam
+POST http://localhost:8080/api/Exam
+Content-Type: application/json
+
+{
+  "startTime": "8",
+  "endTime": "10",
+  "preuve": "Path//",
+  "element": {
+    "idElement": 1
+  }
+}

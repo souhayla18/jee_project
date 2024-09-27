@@ -1,0 +1,37 @@
+### Create Room
+POST http://localhost:8080/api/Room
+Content-Type: application/json
+
+{
+  "nameRoom": "salle",
+  "size": 42,
+  "place": "Old block",
+  "type": "Classroom"
+
+
+
+}
+
+### Update Room
+PUT http://localhost:8080/api/Room/2
+Content-Type: application/json
+
+{ "nameRoom": "salleeeeeeeeeeeeeee",
+  "size": 42
+}
+
+### Delete Room
+DELETE http://localhost:8080/api/Room/1
+Content-Type: application/json
+
+
+
+### Get Room
+GET http://localhost:8080/api/Room/2
+Accept: application/json
+
+### Get All Rooms
+GET http://localhost:8080/api/Room
+Accept: application/json
+
+###

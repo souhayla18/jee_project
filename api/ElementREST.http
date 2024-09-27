@@ -1,0 +1,50 @@
+### Create Educationalelement
+POST http://localhost:8080/api/Educationalelement
+Content-Type: application/json
+
+{
+  "title": "uml",
+  "level": {
+    "idLevel": 2
+  },
+  "professor": {
+    "idPerson": 1
+  },
+  "coordinator": {
+    "idPerson": 1
+  },
+  "elementType": "MODULE"
+}
+
+
+### Update Educationalelement
+PUT http://localhost:8080/api/Educationalelement/1
+Content-Type: application/json
+
+{
+  "title": "Updated Element Title",
+  "level": {
+    "idLevel": 2,
+    "title": "Preparatory cycle 2"
+  },
+  "coordinator": {
+    "idPerson": 2
+  },
+  "elementType": "ELEMENT"
+}
+
+
+### Delete Educationalelement
+DELETE http://localhost:8080/api/Educationalelement/1
+Content-Type: application/json
+
+
+### Get Educationalelement
+GET http://localhost:8080/api/Educationalelement/1
+Accept: application/json
+
+### Get All Educationalelement
+GET http://localhost:8080/api/Educationalelement
+Accept: application/json
+
+###

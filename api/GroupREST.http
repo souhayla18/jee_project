@@ -1,0 +1,37 @@
+### Create Group
+POST http://localhost:8080/api/Group
+Content-Type: application/json
+
+{
+  "title": "funnn",
+  "description": "A group for fun  "
+
+}
+### Update Group
+PUT http://localhost:8080/api/Group/1
+Content-Type: application/json
+
+{
+  "description": "updated description"
+}
+
+### Delete Group
+DELETE http://localhost:8080/api/Group/1
+Content-Type: application/json
+
+### Get Group
+GET http://localhost:8080/api/Group/1
+Accept: application/json
+
+### Get All Groups
+GET http://localhost:8080/api/Group
+Accept: application/json
+
+### Create groups of professors
+PUT http://localhost:8080/api/Group/2/addProfessortogroup
+Content-Type: application/json
+
+[1,2]
+
+
+###

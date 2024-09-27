@@ -1,0 +1,32 @@
+### Create Monitoring
+POST http://localhost:8080/api/monitorings
+Content-Type: application/json
+
+{
+  "dateExam": "03-05-2024",
+  "administrator": {
+    "idPerson": 3
+  },
+  "coordinator": {
+    "idPerson": 1
+  },
+  "room": {
+    "idRoom": 1
+  },
+  "exam": {
+    "idExam": 1
+  }
+}
+
+
+### get Monitoring by date
+GET http://localhost:8080/api/monitorings/03-05-2024
+Accept: application/json
+
+### add professors to monitoring
+PUT http://localhost:8080/api/monitorings/1/addProfessorsToMonitoring
+Content-Type: application/json
+
+[2]
+
+
